@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.homepage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #f9fcf3;
+}
+#mac {
+  background-color: #fff4c5;
+}
+nav {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  /* padding: 5px 0; */
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #222222a8;
+  font-weight: bold;
+  transition: 0.25s ease;
+}
+
+/*nav ul li a:hover {
+    color: red;
+  }*/
+ul:hover a:hover {
+  color: rgb(255, 17, 0);
+  font-weight: bold;
+}
+.content {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  /* padding: 5px 0; */
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.write {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.write h1 {
+  font-size: 45px;
+}
+.write p {
+  font-size: 18px;
+  line-height: 4vh;
+}
+.write a {
+  background: #f49314;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  text-indent: 5px;
+  color: #fff;
+  display: block;
+  width: 9vw;
+  border-radius: 5px;
+}
+.write a:hover {
+  color: #fa6c00;
+  background-color: rgb(233, 229, 210);
+  border-color: black;
+}
+.macimage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.macimage img {
+  height: 450px;
+  filter: saturate(1.5);
+  filter: drop-shadow(5px 5px 10px rgb(108, 107, 107));
+  cursor: pointer;
+}
+.subimage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  /* top: 30px; */
+}
+.subimage img {
+  height: 70px;
+  display: inline-block;
+  float: center;
+  filter: saturate(1.5);
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: rgb(207, 190, 190);
+  height: 50vh;
+}
+
+.desfooterarea {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  top: 10vh;
+}
+
+.desfooterarea div {
+  /* flex: 1; */
+  /* margin-right: 20px; Add spacing between columns */
+}
+
+pre {
+  white-space: pre-line;
+  margin: 0; /* Remove default margins for <pre> element */
+}
+footer p {
+  position: relative;
+  top: 20vh;
+  color: #f9fcf3;
+  background-color: black;
+}

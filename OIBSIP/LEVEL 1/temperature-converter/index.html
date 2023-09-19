@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="card">
+        <h1>TEMPERATURE CONVERTER</h1>
+        <div class="fn">
+          <div class="celsiuspart">
+            <h3>CELSIUS °C</h3>
+            <input
+              type="number"
+              id="celsiusInput"
+              placeholder="Celcius"
+              style="height: 45px"
+            />
+            </select>
+          </div>
+
+          <div class="Fahrenheitpart">
+            <h3>FAHRENHEIT °F</h3>
+            <input
+              type="number"
+              id="fahrenheitInput"
+              placeholder="Fahrenheit"
+              style="height: 45px"
+            />
+            </select>
+          </div>
+        </div>
+        <script>
+          var celsiusInput = document.getElementById("celsiusInput");
+          var fahrenheitInput = document.getElementById("fahrenheitInput");
+
+          celsiusInput.addEventListener("input", function () {
+            let cel = parseFloat(this.value);
+            let fah = (cel * 9/5) + 32;
+            if (!Number.isNaN(fah)) {
+              fahrenheitInput.value = fah.toFixed(2);
+            }
+          });
+
+          fahrenheitInput.addEventListener("input", function () {
+            let fah = parseFloat(this.value);
+            let cel = (fah - 32) * 5/9;
+            if (!Number.isNaN(cel)) {
+              celsiusInput.value = cel.toFixed(2);
+            }
+          });
+        </script>
+      </div>
+    </section>
+  </body>
+</html>
